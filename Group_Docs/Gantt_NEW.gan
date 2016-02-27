@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2016-02-12" view-index="0" gantt-divider-location="353" resource-divider-location="300" version="2.7.2" locale="en_GB">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2016-01-18" view-index="0" gantt-divider-location="409" resource-divider-location="300" version="2.7.2" locale="en_GB">
     <description/>
-    <view zooming-state="default:2" id="gantt-chart">
-        <field id="tpd3" name="Name" width="57" order="0"/>
-        <field id="tpd4" name="Begin date" width="21" order="1"/>
-        <field id="tpd5" name="End date" width="21" order="2"/>
+    <view zooming-state="default:7" id="gantt-chart">
+        <field id="tpd3" name="Name" width="53" order="0"/>
+        <field id="tpd4" name="Begin date" width="23" order="1"/>
+        <field id="tpd5" name="End date" width="22" order="2"/>
     </view>
     <view id="resource-table">
-        <field id="0" name="Name" width="70" order="0"/>
-        <field id="1" name="Default role" width="29" order="1"/>
+        <field id="0" name="Name" width="52" order="0"/>
+        <field id="1" name="Default role" width="47" order="1"/>
     </view>
     <!-- -->
     <calendars>
@@ -83,7 +83,7 @@
             <taskproperty id="tpc198" name="Number19" type="custom" valuetype="double"/>
             <taskproperty id="tpc199" name="Number20" type="custom" valuetype="double"/>
         </taskproperties>
-        <task id="0" name="ProjectPlan" color="#000000" meeting="false" start="2016-02-04" duration="63" complete="5" expand="true" cost-manual-value="0.0" cost-calculated="false">
+        <task id="0" name="ProjectPlan" color="#000000" meeting="false" start="2016-02-04" duration="63" complete="19" expand="true" cost-manual-value="0.0" cost-calculated="false">
             <customproperty taskproperty-id="tpc150" value="false"/>
             <customproperty taskproperty-id="tpc151" value="false"/>
             <customproperty taskproperty-id="tpc152" value="false"/>
@@ -134,7 +134,7 @@
             <customproperty taskproperty-id="tpc197" value="0.0"/>
             <customproperty taskproperty-id="tpc198" value="0.0"/>
             <customproperty taskproperty-id="tpc199" value="0.0"/>
-            <task id="1" name="Qualtiy Assurance" color="#8cb6ce" meeting="false" start="2016-02-04" duration="21" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+            <task id="1" name="Qualtiy Assurance" color="#8cb6ce" meeting="false" start="2016-02-04" duration="35" complete="20" expand="true" cost-manual-value="0.0" cost-calculated="false">
                 <customproperty taskproperty-id="tpc150" value="false"/>
                 <customproperty taskproperty-id="tpc151" value="false"/>
                 <customproperty taskproperty-id="tpc152" value="false"/>
@@ -342,7 +342,7 @@
                 <customproperty taskproperty-id="tpc198" value="0.0"/>
                 <customproperty taskproperty-id="tpc199" value="0.0"/>
             </task>
-            <task id="5" name="Web Design" color="#8cb6ce" meeting="false" start="2016-02-18" duration="6" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+            <task id="5" name="Web Design" color="#8cb6ce" meeting="false" start="2016-02-18" duration="6" complete="100" expand="true" cost-manual-value="0.0" cost-calculated="false">
                 <customproperty taskproperty-id="tpc150" value="false"/>
                 <customproperty taskproperty-id="tpc151" value="false"/>
                 <customproperty taskproperty-id="tpc152" value="false"/>
@@ -394,7 +394,7 @@
                 <customproperty taskproperty-id="tpc198" value="0.0"/>
                 <customproperty taskproperty-id="tpc199" value="0.0"/>
             </task>
-            <task id="6" name="Website Functionality Prototype and Core" color="#8cb6ce" meeting="false" start="2016-02-25" duration="2" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+            <task id="6" name="Website Functionality Prototype and Core" color="#8cb6ce" meeting="false" start="2016-02-25" duration="2" complete="70" expand="true" cost-manual-value="0.0" cost-calculated="false">
                 <customproperty taskproperty-id="tpc150" value="false"/>
                 <customproperty taskproperty-id="tpc151" value="false"/>
                 <customproperty taskproperty-id="tpc152" value="false"/>
@@ -446,7 +446,7 @@
                 <customproperty taskproperty-id="tpc198" value="0.0"/>
                 <customproperty taskproperty-id="tpc199" value="0.0"/>
             </task>
-            <task id="7" name="Presentation" color="#8cb6ce" meeting="false" start="2016-02-25" duration="3" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+            <task id="7" name="Presentation" color="#8cb6ce" meeting="false" start="2016-02-25" duration="3" complete="70" expand="true" cost-manual-value="0.0" cost-calculated="false">
                 <customproperty taskproperty-id="tpc150" value="false"/>
                 <customproperty taskproperty-id="tpc151" value="false"/>
                 <customproperty taskproperty-id="tpc152" value="false"/>
@@ -498,7 +498,7 @@
                 <customproperty taskproperty-id="tpc198" value="0.0"/>
                 <customproperty taskproperty-id="tpc199" value="0.0"/>
             </task>
-            <task id="8" name="Database Setup" color="#8cb6ce" meeting="false" start="2016-03-01" duration="3" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+            <task id="8" name="Database Setup" color="#8cb6ce" meeting="false" start="2016-03-01" duration="3" complete="20" expand="true" cost-manual-value="0.0" cost-calculated="false">
                 <customproperty taskproperty-id="tpc150" value="false"/>
                 <customproperty taskproperty-id="tpc151" value="false"/>
                 <customproperty taskproperty-id="tpc152" value="false"/>
@@ -706,7 +706,7 @@
                 <customproperty taskproperty-id="tpc198" value="0.0"/>
                 <customproperty taskproperty-id="tpc199" value="0.0"/>
             </task>
-            <task id="12" name="Testing" color="#8cb6ce" meeting="false" start="2016-02-25" duration="30" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+            <task id="12" name="Testing" color="#8cb6ce" meeting="false" start="2016-02-25" duration="30" complete="5" expand="true" cost-manual-value="0.0" cost-calculated="false">
                 <customproperty taskproperty-id="tpc150" value="false"/>
                 <customproperty taskproperty-id="tpc151" value="false"/>
                 <customproperty taskproperty-id="tpc152" value="false"/>
@@ -950,12 +950,12 @@
         <displaycolumn property-id="tpc156" order="-1" width="75" visible="false"/>
         <displaycolumn property-id="tpc157" order="-1" width="75" visible="false"/>
         <displaycolumn property-id="tpc158" order="-1" width="75" visible="false"/>
-        <displaycolumn property-id="tpd3" order="0" width="199" visible="true"/>
-        <displaycolumn property-id="tpd4" order="1" width="75" visible="true"/>
+        <displaycolumn property-id="tpd3" order="0" width="218" visible="true"/>
+        <displaycolumn property-id="tpd4" order="1" width="94" visible="true"/>
         <displaycolumn property-id="tpd7" order="-1" width="75" visible="false"/>
         <displaycolumn property-id="tpd8" order="-1" width="75" visible="false"/>
         <displaycolumn property-id="tpd12" order="-1" width="75" visible="false"/>
-        <displaycolumn property-id="tpd5" order="2" width="75" visible="true"/>
+        <displaycolumn property-id="tpd5" order="2" width="93" visible="true"/>
         <displaycolumn property-id="tpc150" order="-1" width="75" visible="false"/>
         <displaycolumn property-id="tpc151" order="-1" width="75" visible="false"/>
         <displaycolumn property-id="tpd10" order="-1" width="75" visible="false"/>
