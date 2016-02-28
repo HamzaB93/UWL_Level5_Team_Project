@@ -1,40 +1,40 @@
 <?php
-	$servername = "127.0.0.1";
+	$servername = "127.0.01";
 	$username = "root";
-	$password = "";
+	$password = "password";
 	$dbname = "team_project";
-	
+
+	// Create connection
 	$conn = mysqli_connect($servername, $username, $password, $dbname);
+
+	// Check connection
 	if (!$conn) 
 	{
 		die("Connection failed: " . mysqli_connect_error());
 	}
-	
+
 	$sql = "SELECT ID, NAME, BRAND, DESCRIPTION, PRICE FROM products";
 	$result = mysqli_query($conn, $sql);
 
-?>
-
-<HTML>
-<TITLE>
-		Index
-</TITLE>
-<BODY>
-
-		
-	<?php
-		if (mysqli_num_rows($result) > 0)
+	if (mysqli_num_rows($result) > 0
 	{
 		// Output data of each rows
 		while($row = mysqli_fetch_assoc($result))
 		{
-			echo "Name: " . $row["NAME"] . "Price(&pound;): " . $row["PRICE"]. "<br>"; 
+			echo "Name: " . $row["NAME"] . "Price(£): " . $row["PRICE"]. "<br>"; 
 		}
 	} else 
 		{
 			echo "0 results";
 		}
-	?>
-	
-</BODY>
-</HTML>
+
+		mysqli_close($conn);
+?>
+
+<!DOCTYPE html>
+
+<html>
+<body>
+
+</body>
+</html>
