@@ -1,3 +1,6 @@
+<?php
+	session_start();
+?>
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -40,13 +43,12 @@ and open the template in the editor.
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   
+  
   <style>
       
    /*Buttons */
    
-   function AddApples(){
-       
-   }
+   var x = 2;
    
       
   .carousel-inner > .item > img {
@@ -123,7 +125,6 @@ body {
       
   </style>
 </head>
-
 	
 
 <body>
@@ -150,7 +151,7 @@ body {
       <li><a href="#">Electronics</a></li>
     </ul>
        <ul id="nav2" class="nav navbar-nav navbar-right">
-        <li><a href="trolley.html">View Trolley</a></li>
+        <li><a href="trolley.php">View Trolley</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -226,17 +227,59 @@ body {
 					if($row["NAME"] == $apple)
 					{
 						// echo the NAME and PRICE
-						echo $row["NAME"] . "<br>" ."&pound;" . $row["PRICE"]. "<br>" ; 
+						echo $row["NAME"] . "<br>" ."&pound;" . $row["PRICE"]. "<br>" ;
+						$applename = $row["NAME"];
+						$applebrand = $row["BRAND"];
+						$appledescription = $row["DESCRIPTION"];
+						$appleprice = $row["PRICE"];
+						$applequantity = 1;
+						
+						
 					}	
 				}
 			} else 
 				{
 					echo "0 results";
 				}
+				
+				function AddApples(){
+					$insertsql = "INSERT INTO trolley (NAME, BRAND, DESCRIPTION, PRICE, QUANTITY) 
+						VALUES('$applename', '$applebrand', '$appledescription',
+						'$appleprice', '$applequantity')";
+				
+
+				$query = mysql_query($insertsql, $conn);
+				if (mysqli_query($conn, $query)) {
+					echo "New record created successfully";
+				} else {
+					echo "Error: " . $insertsql . "<br>" . mysqli_error($conn);
+				}
+				
+				AddApples();
+			}
 		?>    
       </h3>
-      <button onClick="#">Add to trolley</button>
+	  
+	<?php 
+		//function AddApples(){
+			//	$insertsql = "INSERT INTO trolley (NAME, BRAND, DESCRIPTION, PRICE, QUANTITY) 
+				//VALUES('$applename', '$applebrand', '$appledescription',
+					//	'$appleprice', '$applequantity')";
+				
+				//if (mysqli_query($conn, $insertsql)) {
+				//	echo "New record created successfully";
+				//} else {
+				//	echo "Error: " . $insertsql . "<br>" . mysqli_error($conn);
+				//}	
+		//}
+		
+		//AddApples();
+	?>
+	  
+      <button onClick="AddApples">Add to trolley</button>
     </div>
+	
+	
     <div class="col-sm-4">
       <img src="apples.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236"> 
     </div>

@@ -1,9 +1,39 @@
+<?php
+	session_start();
+?>
+
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
+
+<?php
+	$servername = "127.0.0.1";
+	$username = "root";
+	$password = "";
+	$dbname = "team_project";
+	
+	$conn = mysqli_connect($servername, $username, $password, $dbname);
+	if (!$conn) 
+	{
+		die("Connection failed: " . mysqli_connect_error());
+	}	
+	
+	$apple = 'Apples, Bag';	
+	
+	
+	// sql to retrieve database data
+	$sql = "SELECT ID, NAME, BRAND, DESCRIPTION, PRICE FROM products";
+	
+	// For apple
+	$result = mysqli_query($conn, $sql);
+	
+	// For everything
+	$result2 = mysqli_query($conn, $sql);
+?>
+
 <html>
     <head>
         <title>Trolley Page</title>
@@ -133,9 +163,10 @@ body {
             
             <h1>
                 Your Trolley!
+
             </h1>
+	
         </div>   
-        
         
         
          <footer class="masthead">
