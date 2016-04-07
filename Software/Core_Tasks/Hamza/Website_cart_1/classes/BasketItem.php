@@ -34,6 +34,7 @@
       function get_img_url() {
 	 return $this->img_url;
       }
+      
 
       function set_name($name) {
 	 $this->name = $name;
@@ -54,6 +55,7 @@
       function set_img_url($img_url) {
 	 $this->img_url = $img_url;
       }
+      
 
 //  for debugging purposes    
       public function __toString() {
@@ -62,6 +64,7 @@
 		 $this->description .
 		 $this->quantity .
 		 $this->img_url;
+                 
       }
 
    }

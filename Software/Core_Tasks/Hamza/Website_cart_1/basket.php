@@ -164,6 +164,8 @@ body {
         <?php
             $totalPrice = getBasketValue();
             print "Total Price: &pound$totalPrice";
+            
+            updateStock();
         ?>
             <form action="index.php">
     <input type="submit" value="Back to home">

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 02, 2016 at 10:15 PM
+-- Generation Time: Apr 07, 2016 at 12:43 PM
 -- Server version: 10.1.9-MariaDB
 -- PHP Version: 5.5.30
 
@@ -32,7 +32,7 @@ CREATE TABLE `products` (
   `price` double(10,2) NOT NULL,
   `description` varchar(50) NOT NULL,
   `img_url` varchar(50) NOT NULL,
-  `stock` int(11) NOT NULL
+  `stock` int(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --

@@ -7,7 +7,6 @@
    $password = "";
    $database = "project_eshop";
 
-
    try {
       $conn = new PDO("mysql:host=$server;dbname=$database", $username,
 	      $password, array(
