@@ -1,0 +1,36 @@
+Individual Tasks:
+
+Loyality Points - Joe
+Supplies - Hamza
+Marketing - Amrit
+Payments -Tashan
+
+Core Tasks:
+
+GUI/Website - Joe
+Integration - joe hamza
+Checking/Updating Stocks - hamza 
+User Manual - Amrit
+User Documentation - tashan 
+Presentation - Group
+Project Planning 
+Gaant chart - Group 
+Network Diagram - Hamza 
+WBS - Group 
+Risk assessment - Tashan
+Technical Documentation (UML, Git, Could be same as User documentation) - hamza amrit 
+Testing - Tashan 
+Core Dev:
+
+
+
+Group:
+
+Project Manager - Hamza
+Quality Assurance - Tashan
+Recorder - Joe
+presentation
+Wiki - progress for week
+Discussion board - general discussion
+Joe is gay.
+

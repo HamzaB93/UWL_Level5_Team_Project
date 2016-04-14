@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+<body>
+
+<?php
+	$dbhost = 'localhost:3036';
+	$dbuser = 'root';
+	$dbpass = 'password':
+	
+	$conn = mysql_connect($dbhost, $dbuser, $dbpass);
+	
+	if(! $conn)
+	{
+		di('Could not connect: ' . mysql_error());
+	}
+	
+	$sql = 'SELECT ID, NAME, BRAND, DESCRIPTION, PRICE FROM products';
+	mysql_select_db('team_project');
+	$retval = mysql_query( $sql, $conn );
+	
+	if (! $retval) 
+	{
+		die('Could not get data: ' . mysql_error());
+	}
+	
+	while($row = mysql_fetch_assoc($retval))
+	{
+		echo "Id: {$row['ID']} <br> ".
+			"Name: {$row['NAME']} <br> ".
+			"Brand: {$row['BRAND']} <br> ".
+			"Description: {$row['DESCRIPTION']} <br> ".
+			"Price: £ {$row['PRICE']} <br> ".
+			"---------------------------<br>";
+	}
+	
+	echo "Fetched data successfully\n";
+	
+	mysql_close($conn);
+?>
+</body>
+</html>
