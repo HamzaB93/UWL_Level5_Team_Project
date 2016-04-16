@@ -8,9 +8,6 @@
   $image_location = "/Website_version5/images/";
   
   $basket_number = trolleyNumber();
- 
-  
-  
   
   
   if (isset($_GET['id'])) {
@@ -35,8 +32,8 @@
   ?>
 
 <html lang="en">
-    <head>
-        <title>Vista</title>
+<head>
+        <title>Credit/Debit Card Payment</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -94,56 +91,19 @@
                 color: black !important;
             }
 
-            /* --------------- Carousel -------------------- */
-
-            .carousel-inner > .item > img {
-                margin: auto;
-                width:1300px;
-                height:500px
-            }
-
-            .carousel{
-                margin: 0 auto;
-                margin-bottom: 50px;
-                width:800px;
-                height:500px;
-
-            }
-            
-            #carousel_links_white{
-                color: white;
-            }
-            
-            #carousel_links_black{
-                color: black;
-            }
-
-            /* --------------- Product Section -------------------- */
-
-            .row-centre{
-                float:none;
-                margin: 0 auto;
-                margin-top: 20px;
-                margin-bottom: 20px;
-            }
-            
-            #columnDivs{
-                margin-left: auto;
-                margin-right: auto;
-                width: 190px;
-                
-            }
-            
-            #ProductLinks{
-                color: black;
-                text-align: center;
-                
-            }
+           			
+			/* ----------Card Datail CSS--------------*/
+			#mainContent .carddetails { float: left; background:#000; border-radius: 15px; margin-left:350px; padding: 10px; text-align:center; width: 900px}
+			#mainContent #carddetails2 { color: #fff; float: none; text-align:center;}
+			#mainContent #carddetails2 h6 { margin: 2px 0 2px 0;}
+			#mainContent .methods { background:#e6e6e6; margin: 5px 0px 0px 200px; float:left; width: 480px; border-radius: 15px; padding:5px;}
+			#mainContent .cardImage { float: left;  color:FFF;}
+			#mainContent .proceedPayment { color:#FFF; margin:135px 10px 10px 10px; width: 200px; height: 45px; background:#00e600; border-radius: 10px; border: 4px outset #FFF;}
+			#mainContent .cancelPayment { color:#FFF; margin:135px 10px 10px 10px; width: 200px; height: 45px; background:#00e600; border-radius: 10px; border: 4px outset #FFF;}
 			
-			/* ----------Users Delivery Address--------------*/
-			#deliverbody
+			#mainContent .cardDetailCenter {	text-align:center; }
 			
-            
+            #mianContent .form {  text-align: center; position: absolute; top: 282px; left: 923px;}
             
 
             /* --------------- Footer -------------------- */
@@ -161,7 +121,7 @@
 
     <!-- Sets the header division  -->
     <div id="HeaderDiv">
-        <body>
+<body>
             <header class="HeaderClass">
                 <div class="container">
                     <div id="LogoID">
@@ -202,8 +162,72 @@
             </nav>
     </div>
 
-
-
+			<!---------------------------- Card Datail  ------------------------------>
+            
+    <div id="mainContent" style="height:inherit; width:940px;">
+                    <div class="carddetails">
+                    <div align="center">
+                    <form id="carddetails2">
+                    	
+                        <h6>Type of Card :</h6>
+                        <select name="cardType"  >
+                            <option selected="selected">-Select your Card-</option>
+                            <option>Visa</option>
+                            <option>Mastercard</option>
+                            <option>Mastercard Debit</option>
+                            <option>Switch/Maestro</option>
+                            <option>Solo</option>
+                            <option>Visa Debit</option>
+                            <option>Visa Electron</option>
+                            <option>Visa Delta</option>
+                        </select>
+                        
+                        <h6>Card Number :</h6>
+                        <input type="text" value="- Card Number -" />
+                        
+                        <h6>Expiry Date :</h6>
+                        <select name="expiryDay">
+                        	<option selected="selected">---</option><option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug
+                            </option><option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option>
+                        </select>
+                        <select name="expiryYear">
+                        	<option selected="selected">----</option><option>2012</option><option>2013</option><option>2014</option><option>2015</option><option>2016</option><option>2017</option><option>2018</option><option>						2019</option><option>2020</option><option>2021</option><option>2022</option><option>2023</option>
+                        </select>
+                        
+                         <h6>Start Date :</h6>
+                        <select name="startDay">
+                        	<option selected="selected">---</option><option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option>
+                        </select>
+                        <select name="startYear">
+                        	<option selected="selected">----</option><option>2012</option><option>2013</option><option>2014</option><option>2015</option><option>2016</option><option>2017</option><option>2018</option><option>2019</option><option>2020</option><option>2021</option><option>2022</option><option>2023</option>
+                        </select>
+                        
+                        <h6>Security Code :</h6>
+                        <input type="text" value="- Security Number -" />
+                        <h6>Cardholder's Name as it appears on card :</h6>
+                        <input type="text" value="- Cardholder's Name -" />
+                    </form>
+                    </div>
+                    <br>
+                    <div class="methods">
+                    <img class="cardImage" src="images/Visa.png" alt="" />
+                    <img class="cardImage" src="images/American-Express.png" alt="" />
+                    <img class="cardImage" src="images/Switch.png" alt="" />
+                    <img class="cardImage" src="images/Maestro.png" alt="" />
+                    <img class="cardImage" src="images/Solo.png" alt="" />
+                    <img class="cardImage" src="images/Visa Debit.png" alt="" />
+                    <img class="cardImage" src="images/Electron.png" alt="" />
+                    <img class="cardImage" src="images/Delta.png" alt="" />
+                    
+                    
+                    <input class="proceedPayment" type="submit" value="Submit Transaction" />  <input class="cancelPayment" type="submit" value="Cancel Transaction" />
+                    </div>
+               	
+                
+                	</div>
+            
+				</div>
+				
 
 
 

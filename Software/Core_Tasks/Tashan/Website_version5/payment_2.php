@@ -36,7 +36,7 @@
 
 <html lang="en">
     <head>
-        <title>Vista</title>
+        <title>Deliver Address</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -251,7 +251,7 @@
    <input name="phone_number" type="text">
    </p>
    
-   <input type="submit" value="Submit"> <input type="submit" value="Cancel">
+   <input type="submit" value="Next"> <a href="basket.php" class="button">Go back to Trolley </a>
    </form>
    
    </div>

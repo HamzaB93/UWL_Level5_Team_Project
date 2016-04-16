@@ -163,7 +163,7 @@
 
     <form action="" method="POST">
         Loyalty Code: <input type="text" name="loyalty_code"><br>
-        <input type="submit" name="confirm" value="Confirm ID" />
+        <input type="submit" name="confirm" value="Confirm ID" /> <a href="payment_2.php" class="button">Go to Delivery Address </a>
     </form>
 
 
