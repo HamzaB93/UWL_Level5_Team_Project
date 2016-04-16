@@ -154,7 +154,7 @@
         </nav>
 </div>
 
-<div id="loyaltyPointsDiv"
+<div id="loyaltyPointsDiv">
      
 
      <p1>
