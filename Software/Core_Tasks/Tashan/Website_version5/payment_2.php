@@ -214,8 +214,8 @@
    <div class="deliverBody">
    
    <p><h1>Please enter your delivery address.</h1></p>
-   <p><h3>To ensure that the items are deliver to the correct address, you will need to input an<br> address that you would like your items to be deliver to.</h2></p> 
-   <form action="form_address.php" method="post" name="delivery_address">
+   <p><h4>To ensure that the items are deliver to the correct address, you will need to input an<br> address that you would like your items to be deliver to.</h2></p> 
+   <form action="" method="post" name="delivery_address">
    
    <p>Full Name:
    <input name="full_name" type="text">
@@ -251,8 +251,15 @@
    <input name="phone_number" type="text">
    </p>
    
-   <input type="submit" value="Next"> <a href="basket.php" class="button">Go back to Trolley </a>
+   <input type="submit" value="Confirm Address"> 
+   
    </form>
+   
+  <form action="payment_3.php">
+  	<input type="submit" value="Go to Card Detail">
+  
+  </form><a href="basket.php" class="button">  Go back to Trolley </a>
+   
    
    </div>
       

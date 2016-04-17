@@ -93,13 +93,13 @@
 
            			
 			/* ----------Card Datail CSS--------------*/
-			#mainContent .carddetails { float: left; background:#000; border-radius: 15px; margin-left:350px; padding: 10px; text-align:center; width: 900px}
-			#mainContent #carddetails2 { color: #fff; float: none; text-align:center;}
-			#mainContent #carddetails2 h6 { margin: 2px 0 2px 0;}
-			#mainContent .methods { background:#e6e6e6; margin: 5px 0px 0px 200px; float:left; width: 480px; border-radius: 15px; padding:5px;}
+			#mainContent .carddetails { float: left; background:gray; border-radius: 15px; margin-left:200px; padding: 10px; width: 800px}
+			#mainContent #carddetails2 { color: #000000; float: none; text-align:center;}
+			#mainContent #carddetails2 h6 { margin: 2px 0 2px 0; }
+			#mainContent .methods { background:#e6e6e6; margin: 5px 0px 0px 175px; float:left; width: 400px; border-radius: 15px; padding:5px;}
 			#mainContent .cardImage { float: left;  color:FFF;}
-			#mainContent .proceedPayment { color:#FFF; margin:135px 10px 10px 10px; width: 200px; height: 45px; background:#00e600; border-radius: 10px; border: 4px outset #FFF;}
-			#mainContent .cancelPayment { color:#FFF; margin:135px 10px 10px 10px; width: 200px; height: 45px; background:#00e600; border-radius: 10px; border: 4px outset #FFF;}
+			#mainContent .proceedPayment { color:#FFF; margin:135px 10px 10px 10px; width: 150px; height: 45px; background:#00e600; border-radius: 10px; border: 4px outset #FFF;}
+			#mainContent .cancelPayment { color:#FFF; margin:135px 10px 10px 10px; width: 150px; height: 45px; background:#00e600; border-radius: 10px; border: 4px outset #FFF;}
 			
 			#mainContent .cardDetailCenter {	text-align:center; }
 			
@@ -184,23 +184,7 @@
                         
                         <h6>Card Number :</h6>
                         <input type="text" value="- Card Number -" />
-                        
-                        <h6>Expiry Date :</h6>
-                        <select name="expiryDay">
-                        	<option selected="selected">---</option><option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug
-                            </option><option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option>
-                        </select>
-                        <select name="expiryYear">
-                        	<option selected="selected">----</option><option>2012</option><option>2013</option><option>2014</option><option>2015</option><option>2016</option><option>2017</option><option>2018</option><option>						2019</option><option>2020</option><option>2021</option><option>2022</option><option>2023</option>
-                        </select>
-                        
-                         <h6>Start Date :</h6>
-                        <select name="startDay">
-                        	<option selected="selected">---</option><option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option>
-                        </select>
-                        <select name="startYear">
-                        	<option selected="selected">----</option><option>2012</option><option>2013</option><option>2014</option><option>2015</option><option>2016</option><option>2017</option><option>2018</option><option>2019</option><option>2020</option><option>2021</option><option>2022</option><option>2023</option>
-                        </select>
+                     
                         
                         <h6>Security Code :</h6>
                         <input type="text" value="- Security Number -" />
